@@ -15,8 +15,8 @@ services:
         EMAIL: ${EMAIL_ADDRESS:?Err EMAIL_ADDRESS is required}
     container_name: nginx_proxy
     ports:
-      - "80:80"
-      - "443:443"
+      - "80"
+      - "443"
     depends_on:
       - serverwitch-api
     volumes:
